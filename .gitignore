@@ -1,0 +1,5 @@
+# ignore data files
+*.txt
+
+# ignore Pycharm related files
+.idea/*

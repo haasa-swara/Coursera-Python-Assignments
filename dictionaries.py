@@ -5,7 +5,7 @@
 # After the dictionary is produced, the program reads through the dictionary using a maximum loop to find the most prolific committer.
 
 #fl=input("Enter the file name:")
-fh=open("/Users/welcome/Cookbook/mbox-short.txt",'r')
+fh=open("/Users/welcome/Documents/Github/Coursera-Python-Assignments/mbox-short.txt",'r')
 counts=dict()
 for line in fh:
     words=line.split()
@@ -17,7 +17,7 @@ for line in fh:
 
 largeval=0
 largekey=0
-leastval=1000000000000000000000000000000000000000000000000000000000000000000000000
+leastval=float('inf')
 leastkey=None
 for key, value in counts.items():
     if value>largeval:
