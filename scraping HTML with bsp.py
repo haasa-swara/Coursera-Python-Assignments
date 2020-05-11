@@ -8,7 +8,7 @@ total=0
 sample_link = "http://py4e-data.dr-chuck.net/comments_360045.html"
 fhand=urllib.request.urlopen(sample_link)
 html_file = fhand.read()
-soup = BeautifulSoup(html_file)
+soup = BeautifulSoup(html_file,'html.parser')
 comments = soup('span') #### span is the name of the tag
 for comment in comments:
    #print(comment.contents)
