@@ -5,7 +5,7 @@
 
 
 
-fh=open("/Users/welcome/Cookbook/mbox-short.txt")
+fh=open("Users/welcome/Documents/GitHub/Coursera-Python-Assignments")
 count=dict()
 for line in fh:
     words=line.split()
